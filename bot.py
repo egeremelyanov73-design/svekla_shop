@@ -23,7 +23,7 @@ def main_menu():
     kb = InlineKeyboardBuilder()
     kb.button(text="🛒 Услуги (Аккаунты)", callback_data="services")
     kb.button(text="⚙️ Настройки", callback_data="settings")
-    kb.row(InlineKeyboardButton(text="💬 Поддержка", url="https://t.me/svekla_wow"))
+    kb.row(InlineKeyboardButton(text="💬 Поддержка", url="https://t.me/svekla_www"))
     kb.adjust(2, 1)
     return kb.as_markup()
 
