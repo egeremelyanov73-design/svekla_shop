@@ -9,8 +9,8 @@ from aiogram.types import Message, CallbackQuery, InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from aiocryptopay import AioCryptoPay, Networks
 
-TOKEN = "TOKEN = os.environ.get('TOKEN')"
-CRYPTO_TOKEN = "CRYPTO_TOKEN = os.environ.get('CRYPTO_TOKEN')"
+TOKEN = "8578958503:AAFN34-ovcNIF_tqSt7hYzPMMthYt0Db4is"
+CRYPTO_TOKEN = "631807:AA4a2oJZY5wDjj0SnoVUUJcLgJwJ4p5Q6Q1"
 
 bot = Bot(TOKEN)
 dp = Dispatcher()
