@@ -1,2 +1,2 @@
-aiogram
-aiocryptopay
+aiogram==3.13.1
+aiocryptopay==0.4.7
