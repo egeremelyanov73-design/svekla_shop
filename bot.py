@@ -189,5 +189,5 @@ async def main():
     finally:
         await crypto.close()
 
-if _name__==__"main"__:
+if __name__ == "__main__":
     asyncio.run(main())
