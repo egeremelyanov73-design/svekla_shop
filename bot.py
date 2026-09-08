@@ -9,7 +9,7 @@ from aiogram.types import Message, CallbackQuery, InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from aiocryptopay import AioCryptoPay, Networks
 
-TOKEN = "8578958503:AAFaKoZ4cRJi8tzerBEZgM_1-T3OUi-sjfM"
+TOKEN = "8578958503:AAFN34-ovcNIF_tqSt7hYzPMMthYt0Db4is"
 CRYPTO_TOKEN = "631807:AAAa2oJZYSw0Dj0SnoVAUjclgJw4pSQGQi"
 
 bot = Bot(TOKEN)
