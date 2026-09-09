@@ -23,7 +23,7 @@ def main_menu():
     kb = InlineKeyboardBuilder()
     kb.button(text="🛒 Услуги (Аккаунты)", callback_data="services")
     kb.button(text="⚙️ Настройки", callback_data="settings")
-    kb.row(InlineKeyboardButton(text="💬 Поддержка", url="https://t.me/svekla_www"))
+    kb.row(InlineKeyboardButton(text="💬 Поддержка", url="https://t.me/Djndnfif"))
     kb.adjust(2, 1)
     return kb.as_markup()
 
@@ -37,10 +37,10 @@ def settings_menu():
 
 def services_menu():
     kb = InlineKeyboardBuilder()
-    kb.button(text="Аккаунт Россия - 100 руб.", callback_data="item_ru")
+    kb.button(text="Аккаунт Россия - 200 руб.", callback_data="item_ru")
     kb.button(text="Аккаунт Казахстан - 200 руб.", callback_data="item_kz")
     kb.button(text="Аккаунт Украина - 250 руб.", callback_data="item_ua")
-    kb.button(text="Аккаунт Турция - 150 руб.", callback_data="item_tr")
+    kb.button(text="Аккаунт Турция - 100 руб.", callback_data="item_tr")
     kb.button(text="🔙 Главное меню", callback_data="home")
     kb.adjust(1)
     return kb.as_markup()
@@ -86,10 +86,10 @@ async def callback_handler(call: CallbackQuery):
 
     elif data.startswith("item_"):
         items = {
-            "item_ru": {"name": "Аккаунт Россия", "price": 100},
-            "item_kz": {"name": "Аккаунт Казахстан", "price": 200},
-            "item_ua": {"name": "Аккаунт Украина", "price": 250},
-            "item_tr": {"name": "Аккаунт Турция", "price": 150}
+            "item_ru": {"name": "Аккаунт Россия", "price": 2,5},
+            "item_kz": {"name": "Аккаунт Казахстан", "price": 2},
+            "item_ua": {"name": "Аккаунт Украина", "price": 2,5},
+            "item_tr": {"name": "Аккаунт Турция", "price": 1,5}
         }
         item = items.get(data)
         if not item:
@@ -139,7 +139,7 @@ async def callback_handler(call: CallbackQuery):
             
             if invoice and invoice.status == "paid":
                 success_kb = InlineKeyboardBuilder()
-                success_kb.button(text="Написать в поддержку", url="https://t.me/svekla_www")
+                success_kb.button(text="Написать в поддержку", url="https://t.me/Djndnfif")
                 success_kb.button(text="В главное меню", callback_data="home")
                 success_kb.adjust(1, 1)
                 
